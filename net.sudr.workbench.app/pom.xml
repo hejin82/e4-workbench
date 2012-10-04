@@ -1,0 +1,15 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.sudr.workbench</groupId>
+  <artifactId>net.sudr.workbench.app</artifactId>
+  <packaging>eclipse-plugin</packaging>
+  <name>Workbench Application</name>
+  <description>The base workbench application upon which other tools may be deployed</description>
+  
+  <parent>
+  	<groupId>net.sudr</groupId>
+  	<artifactId>net.sudr.workbench.parent</artifactId>
+  	<version>1.0.0-SNAPSHOT</version>
+  	<relativePath>../net.sudr.workbench.parent/pom.xml</relativePath>
+  </parent>
+</project>

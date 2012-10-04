@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Tests
+Bundle-SymbolicName: net.sudr.workbench.app.tests
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: sudr.net
+Fragment-Host: net.sudr.workbench.app;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.junit
