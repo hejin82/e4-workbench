@@ -5,11 +5,11 @@
          id="product"
          point="org.eclipse.core.runtime.products">
       <product
-            name="net.sudr.workbench.app"
+            name="%product.workbench"
             application="org.eclipse.e4.ui.workbench.swt.E4Application">
          <property
                name="appName"
-               value="net.sudr.workbench.app">
+               value="%product.workbench">
          </property>
          <property
                name="applicationXMI"

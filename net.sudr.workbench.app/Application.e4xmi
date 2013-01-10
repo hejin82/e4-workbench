@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_5xG6UAxNEeKzNqMH2DOuTw" elementId="org.eclipse.e4.ide.application" bindingContexts="_5xG6UQxNEeKzNqMH2DOuTw">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_5xHhYAxNEeKzNqMH2DOuTw" label="net.sudr.workbench.app" width="500" height="400">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_5xHhYAxNEeKzNqMH2DOuTw" label="%window.workbench" width="500" height="400">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_5xHhaAxNEeKzNqMH2DOuTw">
       <children xsi:type="advanced:Perspective" xmi:id="_5xHhaQxNEeKzNqMH2DOuTw">
         <children xsi:type="basic:PartSashContainer" xmi:id="_5xHhagxNEeKzNqMH2DOuTw">
@@ -9,13 +9,13 @@
       </children>
     </children>
     <mainMenu xmi:id="_5xHhYQxNEeKzNqMH2DOuTw" elementId="menu:org.eclipse.ui.main.menu">
-      <children xsi:type="menu:Menu" xmi:id="_5xHhYgxNEeKzNqMH2DOuTw" label="File">
-        <children xsi:type="menu:HandledMenuItem" xmi:id="_5xHhYwxNEeKzNqMH2DOuTw" label="Open" iconURI="platform:/plugin/net.sudr.workbench.app/icons/sample.gif" command="_5xG6XgxNEeKzNqMH2DOuTw"/>
-        <children xsi:type="menu:HandledMenuItem" xmi:id="_5xHhZAxNEeKzNqMH2DOuTw" label="Save" iconURI="platform:/plugin/net.sudr.workbench.app/icons/save_edit.gif" command="_5xG6YQxNEeKzNqMH2DOuTw"/>
-        <children xsi:type="menu:HandledMenuItem" xmi:id="_5xHhZQxNEeKzNqMH2DOuTw" label="Quit" command="_5xG6WgxNEeKzNqMH2DOuTw"/>
+      <children xsi:type="menu:Menu" xmi:id="_5xHhYgxNEeKzNqMH2DOuTw" label="%menu.file">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_5xHhYwxNEeKzNqMH2DOuTw" label="%menu.open" iconURI="platform:/plugin/net.sudr.workbench.app/icons/sample.gif" command="_5xG6XgxNEeKzNqMH2DOuTw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_5xHhZAxNEeKzNqMH2DOuTw" label="%menu.save" iconURI="platform:/plugin/net.sudr.workbench.app/icons/save_edit.gif" command="_5xG6YQxNEeKzNqMH2DOuTw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_5xHhZQxNEeKzNqMH2DOuTw" label="%menu.quit" command="_5xG6WgxNEeKzNqMH2DOuTw"/>
       </children>
-      <children xsi:type="menu:Menu" xmi:id="_5xHhZgxNEeKzNqMH2DOuTw" label="Help">
-        <children xsi:type="menu:HandledMenuItem" xmi:id="_5xHhZwxNEeKzNqMH2DOuTw" label="About" command="_5xG6ZAxNEeKzNqMH2DOuTw"/>
+      <children xsi:type="menu:Menu" xmi:id="_5xHhZgxNEeKzNqMH2DOuTw" label="%menu.help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_5xHhZwxNEeKzNqMH2DOuTw" label="%menu.about" command="_5xG6ZAxNEeKzNqMH2DOuTw"/>
       </children>
     </mainMenu>
     <trimBars xmi:id="_5xHhbAxNEeKzNqMH2DOuTw">
@@ -25,10 +25,10 @@
       </children>
     </trimBars>
   </children>
-  <handlers xmi:id="_5xG6WwxNEeKzNqMH2DOuTw" contributionURI="platform:/plugin/net.sudr.workbench.app/net.sudr.workbench.app.handlers.QuitHandler" command="_5xG6WgxNEeKzNqMH2DOuTw"/>
-  <handlers xmi:id="_5xG6XwxNEeKzNqMH2DOuTw" contributionURI="platform:/plugin/net.sudr.workbench.app/net.sudr.workbench.app.handlers.OpenHandler" command="_5xG6XgxNEeKzNqMH2DOuTw"/>
-  <handlers xmi:id="_5xG6YgxNEeKzNqMH2DOuTw" contributionURI="platform:/plugin/net.sudr.workbench.app/net.sudr.workbench.app.handlers.SaveHandler" command="_5xG6YQxNEeKzNqMH2DOuTw"/>
-  <handlers xmi:id="_5xG6ZQxNEeKzNqMH2DOuTw" contributionURI="platform:/plugin/net.sudr.workbench.app/net.sudr.workbench.app.handlers.AboutHandler" command="_5xG6ZAxNEeKzNqMH2DOuTw"/>
+  <handlers xmi:id="_5xG6WwxNEeKzNqMH2DOuTw" contributionURI="bundleclass://net.sudr.workbench.app/net.sudr.workbench.app.handlers.QuitHandler" command="_5xG6WgxNEeKzNqMH2DOuTw"/>
+  <handlers xmi:id="_5xG6XwxNEeKzNqMH2DOuTw" contributionURI="bundleclass://net.sudr.workbench.app/net.sudr.workbench.app.handlers.OpenHandler" command="_5xG6XgxNEeKzNqMH2DOuTw"/>
+  <handlers xmi:id="_5xG6YgxNEeKzNqMH2DOuTw" contributionURI="bundleclass://net.sudr.workbench.app/net.sudr.workbench.app.handlers.SaveHandler" command="_5xG6YQxNEeKzNqMH2DOuTw"/>
+  <handlers xmi:id="_5xG6ZQxNEeKzNqMH2DOuTw" contributionURI="bundleclass://net.sudr.workbench.app/net.sudr.workbench.app.handlers.AboutHandler" command="_5xG6ZAxNEeKzNqMH2DOuTw"/>
   <bindingTables xmi:id="_5xG6XAxNEeKzNqMH2DOuTw" bindingContext="_5xG6UQxNEeKzNqMH2DOuTw">
     <bindings xmi:id="_5xG6XQxNEeKzNqMH2DOuTw" keySequence="Ctrl+Q" command="_5xG6WgxNEeKzNqMH2DOuTw"/>
     <bindings xmi:id="_5xG6YAxNEeKzNqMH2DOuTw" keySequence="Ctrl+O" command="_5xG6XgxNEeKzNqMH2DOuTw"/>
@@ -43,10 +43,10 @@
   <commands xmi:id="_5xG6XgxNEeKzNqMH2DOuTw" elementId="net.sudr.workbench.app.openCommand" commandName="openCommand"/>
   <commands xmi:id="_5xG6YQxNEeKzNqMH2DOuTw" elementId="net.sudr.workbench.app.saveCommand" commandName="saveCommand"/>
   <commands xmi:id="_5xG6ZAxNEeKzNqMH2DOuTw" elementId="net.sudr.workbench.app.aboutCommand" commandName="aboutCommand"/>
-  <addons xmi:id="_5xG6VAxNEeKzNqMH2DOuTw" elementId="org.eclipse.e4.core.commands.service" contributionURI="platform:/plugin/org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
-  <addons xmi:id="_5xG6VQxNEeKzNqMH2DOuTw" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="platform:/plugin/org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
-  <addons xmi:id="_5xG6VgxNEeKzNqMH2DOuTw" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="platform:/plugin/org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
-  <addons xmi:id="_5xG6VwxNEeKzNqMH2DOuTw" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="platform:/plugin/org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
-  <addons xmi:id="_5xG6WAxNEeKzNqMH2DOuTw" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="platform:/plugin/org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
-  <addons xmi:id="_5xG6WQxNEeKzNqMH2DOuTw" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="platform:/plugin/org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_5xG6VAxNEeKzNqMH2DOuTw" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_5xG6VQxNEeKzNqMH2DOuTw" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_5xG6VgxNEeKzNqMH2DOuTw" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_5xG6VwxNEeKzNqMH2DOuTw" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_5xG6WAxNEeKzNqMH2DOuTw" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_5xG6WQxNEeKzNqMH2DOuTw" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
 </application:Application>
